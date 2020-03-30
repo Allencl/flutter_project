@@ -48,8 +48,8 @@ class _HomePageHead extends StatelessWidget{
     Widget build(BuildContext context) {
         return  Row(
             children: <Widget>[
-                Expanded( child: Text("11111111111111111111")),
-                Expanded( child: Text("11111111111111111111")),
+                Expanded( child: Text("33")),
+                Expanded( child: Text("55")),
             ]
         ); 
     }  
