@@ -47,6 +47,9 @@ class _BottomBarWidgetState extends State<BottomBarWidget> {
                 case 0:
                     Navigator.pushNamed(context,"/");
                 break;
+                case 1:
+                    Navigator.pushNamed(context,"/login");
+                break;
             default:
           }
         },

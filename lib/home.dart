@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
-import './bottomBar.dart';     // 底部导航条
-import './drawerLeft.dart';    // 左边侧栏
+
+import 'package:wis_flutter/bottomBar.dart';    // 底部导航条
+import 'package:wis_flutter/drawerLeft.dart';   // 左边侧栏
 
 
 // 首页

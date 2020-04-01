@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
-import '../bottomBar.dart';                      // 底部导航条
-import '../component/listTableCross.dart';       // table 横向  
-import '../component/listTableVertical.dart';    // table 纵向  
+import 'package:wis_flutter/bottomBar.dart';                          // 底部导航条
+import 'package:wis_flutter/wis_component/listTableCross.dart';       // table 横向  
+import 'package:wis_flutter/wis_component/listTableVertical.dart';    // table 纵向 
+import 'package:wis_flutter/wis_component/text.dart';                 // 标题栏
 
-import '../component/text.dart';                // 标题栏
 
 
 
