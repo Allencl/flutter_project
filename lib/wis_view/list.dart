@@ -38,6 +38,7 @@ class ListPage extends StatelessWidget {
                   ),
 
 
+
                   TextLabelLine(text:'Table-纵向'),
                   ListPageTableVertical(
                       data:[
