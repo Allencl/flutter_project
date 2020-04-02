@@ -113,7 +113,7 @@ class _HomePageBodyICON extends StatelessWidget{
             child: Container(
                 width: 80,
                 height: 80,
-                padding: EdgeInsets.fromLTRB(8,8,8,8),
+                padding: EdgeInsets.fromLTRB(8,12,8,8),
                 decoration: BoxDecoration(
                     color: Colors.transparent,
                     borderRadius: BorderRadius.all(Radius.circular(5.0)),
@@ -124,7 +124,7 @@ class _HomePageBodyICON extends StatelessWidget{
                         Icon(
                             icons,
                             size: 32,
-                            color:Colors.green,
+                            color:Colors.blue,
                         ),
                         Padding(
                             padding: const EdgeInsets.fromLTRB(0,3,0,0),
@@ -132,7 +132,7 @@ class _HomePageBodyICON extends StatelessWidget{
                                 "$text",
                                 style: TextStyle(
                                     letterSpacing: 1.0, 
-                                    fontSize: 16.0,
+                                    fontSize: 14,
                                     fontWeight: FontWeight.w500, 
                                     color: const Color.fromRGBO(58,58,58,1)
                                 ),

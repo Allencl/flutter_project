@@ -21,7 +21,7 @@ class TextLabelLine extends StatelessWidget{
           style: TextStyle(
             // height: 2,
             color: const Color.fromRGBO(81,90,110,1),
-            fontWeight: FontWeight.w400,
+            fontWeight: FontWeight.w600,
           ),
         ));
     }  

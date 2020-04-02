@@ -26,7 +26,7 @@ class _BottomBarWidgetState extends State<BottomBarWidget> {
            
           BottomNavigationBarItem(
             icon: Icon(Icons.business),
-            title: Text('Business'),
+            title: Text('登录'),
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.school),
