@@ -1,15 +1,12 @@
 import 'package:flutter/material.dart';
 
-import 'package:wis_flutter/bottomBar.dart';                          // 底部导航条
-import 'package:wis_flutter/wis_component/listTableCross.dart';       // table 横向  
-import 'package:wis_flutter/wis_component/listTableVertical.dart';    // table 纵向 
-import 'package:wis_flutter/wis_component/text.dart';                 // 标题栏
-
+import 'package:wis_flutter/bottomBar.dart';     // 底部导航条
+import 'package:wis_flutter/index.dart';        // wis flutter 组件 
 
 
 
 // 列表
-class ListPage extends StatelessWidget {
+class TablePage extends StatelessWidget {
 
     @override
     Widget build(BuildContext context) {
@@ -19,8 +16,8 @@ class ListPage extends StatelessWidget {
           backgroundColor: Colors.blue[10],
           body: ListView(
               children: <Widget>[
-                  TextLabelLine(text:'Table-横向'),
-                  ListPageTableCross(
+                  WisTextLabelLine(text:'Table-横向'),
+                  WisListPageTableCross(
                       columns:[
                           { "key":"name1","name":"姓名" },
                           { "key":"name2","name":"时间" },
@@ -39,8 +36,8 @@ class ListPage extends StatelessWidget {
 
 
 
-                  TextLabelLine(text:'Table-纵向'),
-                  ListPageTableVertical(
+                  WisTextLabelLine(text:'Table-纵向'),
+                  WisListPageTableVertical(
                       data:[
                           {
                             "name": "姓名",
@@ -53,13 +50,6 @@ class ListPage extends StatelessWidget {
                       ]                    
                   ),
 
-                  // TextLabelLine(text:'Table-横向'),
-                  // ListPageTableCross(),   // table 横向
-
-                  // TextLabelLine(text:'Table-横向'),
-                  // ListPageTableCross(),   // table 横向
-                  
-                  // Divider(height:20.0),
 
                  
               ],

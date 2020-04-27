@@ -8,8 +8,8 @@ class ListPageTableCross extends StatefulWidget {
 
   // final List<Object> columns;
   // final List<Object> data;
-  List columns = [];
-  List data = [];
+  final List columns;
+  final List data;
 
   
   ListPageTableCross({

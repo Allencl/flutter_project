@@ -7,7 +7,7 @@ import 'package:flutter/material.dart';
 class ListPageTableVertical extends StatefulWidget {
 
 
-  List data = [];
+  final List data;
 
   
   ListPageTableVertical({

@@ -28,10 +28,11 @@ class _BottomBarWidgetState extends State<BottomBarWidget> {
             icon: Icon(Icons.business),
             title: Text('登录'),
           ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.school),
-            title: Text('School'),
-          ),
+          
+          // BottomNavigationBarItem(
+          //   icon: Icon(Icons.school),
+          //   title: Text('School'),
+          // ),
         ],
         currentIndex: _selectedIndex,
 

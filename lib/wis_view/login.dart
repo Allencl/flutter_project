@@ -4,14 +4,24 @@ import 'package:flutter/material.dart';
 
 // 登录页
 class LoginPage extends StatefulWidget {
+
+    final String title;
+    final dynamic onLogin;
+
+    LoginPage({
+        Key key,
+        this.title='WIS',
+        this.onLogin,
+    }) : super(key: key);
+
     @override
     _LoginPageState createState() => new _LoginPageState();
 }
 
 class _LoginPageState extends State<LoginPage> {
 
-    final _formKey = GlobalKey<FormState>();
 
+    final _formKey = GlobalKey<FormState>();
     TextEditingController _nameController =  TextEditingController();     // 账号
     TextEditingController _passwordController =  TextEditingController(); // 密码
 
@@ -27,30 +37,37 @@ class _LoginPageState extends State<LoginPage> {
     }
 
     // 登录
-    void onLogin(){
+    void _onLogin(){
         
         //读取当前的Form状态
         var loginForm = _formKey.currentState;
 
+
         // //验证Form表单
         if(loginForm.validate()){
-          print("登录了");
-          print(_nameController.text);
-          print(_passwordController.text);
+
+            // 回调
+            if( widget.onLogin != null ) {
+              widget.onLogin({
+                "name":_nameController.text,
+                "password":_passwordController.text,
+              });
+            }
         }
     }    
 
     @override
     Widget build(BuildContext context){
-      return new MaterialApp(
+      return MaterialApp(
         title: '登录页',
         home: Scaffold(
+          resizeToAvoidBottomInset:false,
           body: ListView(
             children: <Widget>[
                 Container(
                     padding: const EdgeInsets.fromLTRB(16,90,16,0),
-                    child: new Text(
-                        'WIS',
+                    child: Text(
+                        widget.title,
                         style: TextStyle(
                             fontWeight: FontWeight.w600,
                             color: Color.fromRGBO(40, 122, 230, 1),
@@ -131,7 +148,7 @@ class _LoginPageState extends State<LoginPage> {
                           margin: EdgeInsets.only(top: 40.0),
                           child: SizedBox.expand(   
                             child: RaisedButton(
-                              onPressed: onLogin,
+                              onPressed: _onLogin,
                               color: Color.fromRGBO(40, 122, 230, 1),
                               child: Text(
                                 '登录',
